@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  gather_facts: no
+  strategy: mitogen_linear
+  tasks:
+    - debug: msg="using fqcn, using mitogen"
+    - import_role: name=dummy_noshort

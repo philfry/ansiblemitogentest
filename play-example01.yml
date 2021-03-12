@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  gather_facts: no
+  strategy: linear
+  tasks:
+    - debug: msg="using simplified module name, not using mitogen"
+    - import_role: name=dummy
